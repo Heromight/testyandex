@@ -1,0 +1,63 @@
+#all {
+	width: 900px;
+	font-style: Verdana, Arial, Times, serif;
+	border: 1px solid black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -450px;
+	text-align: center;
+}
+
+.startgame {
+	
+}
+
+#startgame {
+	max-height: 600px;
+}
+
+#startheader {
+	position: relative;
+	max-width: 300px;
+	max-height: 100px;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+
+#startarea {
+	max-height: 600px;
+}
+
+#startarea .img {
+	display: inline-block;
+	width: 292px;
+	height: 436px;
+	margin: 1px;
+}
+
+#img1 {
+	background: url("./images/cards.png") no-repeat -310px -5030px;
+}
+
+#img2 {
+	background: url("./images/cards.png") no-repeat -932px -3198px;
+}
+
+#img3 {
+	background: url("./images/cards.png") no-repeat -932px -1370px;
+}
+
+#formstart {
+	margin: 0;
+	position: relative;
+	float: right;
+	padding: 2px 5px 2px 5px;
+}
+
+.formstart {
+	display: inline-block;
+}
