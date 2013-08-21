@@ -2,29 +2,45 @@
 <html>	
 	<head>
 		<title> Игра "Пьяница"</title>
-		<meta http-equiv = "content-type" content = "text/html; charset= utf-8">
-		<LINK rel = "icon" type = "image/x-icon" href = "./images/icon.ico">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Ståle Refsnes">
+		<meta charset="UTF-8">
+		<link rel = "shortcut icon" href = "../images/bottle.ico" type = "image/x-icon">
 		<link rel = "stylesheet" content = "text/css" href = "main.css">
+		<script type = "text/javascript">
+			function goTo(){
+			var si = document.getElementById("selectForm").selectedIndex;
+			var opt = document.getElementById("selectForm").options;
+			if (opt[si].index === 0) {
+				window.location.href = "./gamefor2/game2.html";
+			}
+			else if (opt[si].index === 1) {
+				window.location.href = "./gamefor4/game4.html";
+			}
+			}
+		</script>
 	</head>
-	
 	
 	<body>
 		<div id = "all" class = "workarea">
 			<div id = "startgame" class = "startgame">
-				<div id = "startheader" class = "startgame">Игра "Пьяница"</div>
+				<div id = "startheader" class = "startgame"> Игра "Пьяница"</div>
 				<div id = "startarea" class = "startgame">
 					<div id = "img1" class = "img"></div>
 					<div id = "img2" class = "img"></div>
 					<div id = "img3" class = "img"></div>
 				</div>
-				<form action = "" id = "formstart">
-					<div id = "textform" class = "formstart">Количество игроков</div>
-					<select class = "formstart">
-						<option>2</option>
-						<option>4</option>
-					</select>
-					<input type = "submit" value = "Начать игру" class = "formstart">
-				</form>
+				<div id = "formstart" name = "formStart">
+					<form>
+						<div id = "textform" class = "formstart"> Количество игроков </div>
+						<select name = "selectForm" id = "selectForm" class = "formstart">
+							<option value = "2">2</option>
+							<option value = "4">4</option>
+						</select>
+						<button type = "button" onclick = "goTo()"> Начать игру </button>
+					</form>
+				</div>
 			</div>
 		</div>	
 	</body>

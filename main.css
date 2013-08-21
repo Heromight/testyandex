@@ -1,13 +1,8 @@
 #all {
 	width: 900px;
 	font-style: Verdana, Arial, Times, serif;
-	border: 1px solid black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -300px;
-	margin-left: -450px;
 	text-align: center;
+	margin: 0 auto;
 }
 .startgame {
 }
