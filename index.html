@@ -6,18 +6,11 @@
 		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 		<meta name="author" content="Ståle Refsnes">
 		<meta charset="UTF-8">
-		<link rel = "shortcut icon" href = "../images/bottle.ico" type = "image/x-icon">
+		<link rel = "shortcut icon" href = "./images/bottle.ico" type = "image/x-icon">
 		<link rel = "stylesheet" content = "text/css" href = "main.css">
 		<script type = "text/javascript">
 			function goTo(){
-			var si = document.getElementById("selectForm").selectedIndex;
-			var opt = document.getElementById("selectForm").options;
-			if (opt[si].index === 0) {
-				window.location.href = "./gamefor2/game2.html";
-			}
-			else if (opt[si].index === 1) {
-				window.location.href = "./gamefor4/game4.html";
-			}
+				window.location.href = "./game/game.html";
 			}
 		</script>
 	</head>
@@ -33,11 +26,6 @@
 				</div>
 				<div id = "formstart" name = "formStart">
 					<form>
-						<div id = "textform" class = "formstart"> Количество игроков </div>
-						<select name = "selectForm" id = "selectForm" class = "formstart">
-							<option value = "2">2</option>
-							<option value = "4">4</option>
-						</select>
 						<button type = "button" onclick = "goTo()"> Начать игру </button>
 					</form>
 				</div>

@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	
+}
+
+body {
+
+}
+
+#workarea {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 1000px;
+	font-style: Verdana, Ar	ial, Times, serif;
+	text-align: center;
+}
+
+.cloud {
+	width: 150px;
+	padding: 29px 0 29px 0;
+	background: url("../images/cloud.png") no-repeat;
+	margin: 5px;
+}
+
+.cloud:hover {
+	cursor:default;
+}
+#cloud1 {
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+#cloud2 {
+	margin: 0 auto;
+}
+
+#cardarea {
+	width: 650px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#cardarea1 {
+	margin: 0 auto;
+	width: 150px;
+	margin-top: 5px;
+}
+
+#cardarea1 div {
+	margin: 4px;
+}
+
+#cardarea2 {
+	margin: 0 auto;
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+#cardarea2 div {
+	margin: 4px;
+}
+
+.allcards {
+	width: 60px;
+	height: 90px;
+	background: url("../images/cardback.png") no-repeat;
+}
+
+#allcards1 {
+	display: inline-block;
+}
+
+#allcards2 {
+	display: inline-block;
+}
+
+.card {
+	width: 57px;
+	height: 90px;
+	border: 1px solid #0a0;
+}
+
+#card1 {
+	display: inline-block;
+}
+
+#card2 {
+	display: inline-block;
+}
+
+#statementarea {
+	width: 300px;
+	margin: 0 auto;
+	padding: 60px 0 60px 0;	
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#button {
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	width: 200px;
+	padding: 10px;
+	margin-top: -40px;
+	margin-left: -200px;
+}
