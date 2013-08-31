@@ -3,19 +3,18 @@
 	padding: 0;
 }
 html {
-	
 }
 
 body {
-
+	
 }
 
 #workarea {
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
-	width: 1000px;
-	font-style: Verdana, Ar	ial, Times, serif;
+	width: 800px;
+	font-style: Verdana, Arial, Times, serif;
 	text-align: center;
 }
 
