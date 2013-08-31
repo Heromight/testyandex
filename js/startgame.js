@@ -41,17 +41,16 @@ function algorithm() {
 	while ((player1.length > 0) && (player2.length > 0)) {	 // Цикл, в котором пров-ся основное условие алгоритма - когда опустеет рука одного из игроков
 		p1 = player1.shift();
 		s1 = p1 + ".png";
-		card1.backgroundImage = "url(" + s1 + ")";
+		card1.backgroundImage = "url(./" + s1 + ")";
 		card1.backgroundRepeat = "no-repeat";
-		var timer = setTimeout( function qwe() { return; }, 200);
-		clearTimeOut(timer);
 		p2 = player2.shift();
 		s2 = p2 + ".png";
-		card2.backgroundImage = "url(" + s2 + ")";
+		card2.backgroundImage = "url(./" + s2 + ")";
 		card2.backgroundRepeat = "no-repeat";
 		if ( parseInt(p1) > parseInt(p2) ) {
 				temp.push(p1);
 				temp.push(p2);
+				document.getElementById("statementarea").innerHTML = "Игрок 1 выйграл карты";
 				player1new = player1.concat(temp);
 				player1 = player1new;
 				player1new = [];
@@ -60,6 +59,7 @@ function algorithm() {
 			else if ( parseInt(p1) < parseInt(p2) ) {
 					temp.push(p1);
 					temp.push(p2);
+					document.getElementById("statementarea").innerHTML = "Игрок 2 выйграл карты";
 					player2new = player2.concat(temp);
 					player2 = player2new;
 					player2new = [];
@@ -68,6 +68,7 @@ function algorithm() {
 				else {
 					temp.push(p1);
 					temp.push(p2);
+					document.getElementById("statementarea").innerHTML = "Спор";
 					continue;
 				}
 			break;
